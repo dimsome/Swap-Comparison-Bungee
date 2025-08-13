@@ -1,0 +1,105 @@
+userAddress
+string
+required
+Sender wallet address
+
+Example: 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+originChainId
+string
+required
+Source Chain Id
+
+Example: 42161
+destinationChainId
+string
+required
+Destination Chain Id
+
+Example: 10
+inputToken
+string
+required
+Address of the input token
+
+Example: 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE
+inputAmount
+string
+required
+Input amount in wei
+
+Example: 100000000000000
+receiverAddress
+string
+required
+Receiver wallet address
+
+Example: 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+outputToken
+string
+required
+Output token address
+
+Example: 0x0b2c639c533813f4aa9d7837caf62653d097ff85
+slippage
+string
+Swap slippage for manual routes and slippage considered for auto route
+
+delegateAddress
+string
+Delegate address applied to routes where delegate is an option. By default set to userAddress
+
+refuel
+string
+Apply refuel to the request. Refuel by default is false
+
+destinationPayload
+string
+Destination payload to execute on the receiver. Destination gas limit needed along with this param if set
+
+destinationGasLimit
+string
+Destination gas limit to be used to execute the payload on destination receiver
+
+feeBps
+string
+Fee in bps
+
+feeTakerAddress
+string
+Address to collect fee
+
+enableManual
+string
+Enable manual routes. By default it is false
+
+disableSwapping
+string
+disable swapping for manual routes. By default it is false
+
+disableAuto
+string
+disable auto routes. By default it is false
+
+excludeBridges
+string
+Bridges to exclude in manual routes. Only applicable to manual routes
+
+includeDexes
+string
+Dexes to include while routing via manual routes. Only applicable to manual
+
+excludeDexes
+string
+Dexes to exclude in manual routes. Only applicable to manual routes
+
+includeBridges
+string
+Bridges to include while routing via manual routes. Only applicable to manual
+
+exclusiveTransmitter
+string
+exclusive requests can be sent by putting in an identifier address of the transmitter
+
+useInbox
+string
+use inbox to send request to the inbox. By default it is false, Only applicable to auto routes
